@@ -11,3 +11,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body[data-aos-duration='5000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='5000'] {
+  transition-duration: 5000ms;
+}

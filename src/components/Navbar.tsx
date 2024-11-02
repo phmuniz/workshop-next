@@ -12,6 +12,10 @@ const paginas = [
         id: 'servicos'
     },
     {
+        name: 'INFORMAÇÕES',
+        id: 'infos'
+    },
+    {
         name: 'DÚVIDAS',
         id: 'duvidas'
     }
@@ -25,7 +29,7 @@ export default function Navbar(){
 
         const elemento = document.getElementById(id)
 
-        elemento?.scrollIntoView({behavior: 'smooth'})
+        elemento?.scrollIntoView({behavior: 'smooth', block: 'start'})
     }
 
     const [visivel, setVisivel] = useState(false)
@@ -34,7 +38,7 @@ export default function Navbar(){
 
         <div className="sticky top-0 z-50 bg-purple-600 w-100 flex flex-col justify-center items-center">
 
-            <div className="lg:hidden flex p-6" >
+            <div className="md:hidden flex p-6" >
                 <span onClick={() => setVisivel(!visivel)}>{IconeMenu}</span>
             </div>
 

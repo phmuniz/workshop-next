@@ -2,7 +2,8 @@ export default function Hero(){
 
     return(
 
-        <div data-aos="zoom-in-down" className="flex flex-col lg:flex-row p-8 lg:mt-40 gap-8">
+        <div data-aos="fade-up"
+        data-aos-duration="3000" className="flex flex-col lg:flex-row p-8 lg:mt-40 gap-8">
 
             <div className="flex flex-1 justify-center items-center">
                 <img src="logo-roxa.png" alt="" />

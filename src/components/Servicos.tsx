@@ -22,7 +22,7 @@ export default function Servicos(){
 
     return(
 
-        <div data-aos="zoom-in-down" id='servicos' className='bg-purple-600 flex justify-center items-center p-8 lg:mt-40'>
+        <div data-aos="zoom-in-down" id='servicos' className='bg-purple-600 flex justify-center items-center py-8 md:px-20 mt-20 lg:mt-40'>
 
             <Carousel width="100%" showThumbs={false}>
 
@@ -32,10 +32,12 @@ export default function Servicos(){
                     return (
                         <div className='h-full relative' key={servico.nome}>
                             <Image className='h-full' src={servico.img} alt=''/>
-                            <div className='absolute bottom-10 p-8 bg-zinc-500/45'>
-                                <span className='text-white text-[30px] md:text-[200px] flex justify-start'>{servico.nome}</span>
+                            <div className='absolute bottom-0 p-8 bg-zinc-500/45'>
+                                <span className='text-white text-[30px] sm:text-[70px] md:text-[120px] lg:text-[200px] flex justify-start'>
+                                    {servico.nome}
+                                </span>
                                 <p className='text-[10px] md:text-lg'>
-                                {servico.desc}
+                                    {servico.desc}
                                 </p>
                             </div>
                         </div>

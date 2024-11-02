@@ -1,4 +1,6 @@
+import Duvidas from "@/components/Duvidas";
 import Hero from "@/components/Hero";
+import Infos from "@/components/Infos";
 import Navbar from "@/components/Navbar";
 import Servicos from "@/components/Servicos";
 import AOS from 'aos';
@@ -18,6 +20,10 @@ export default function Home() {
       <Hero />
 
       <Servicos />
+
+      <Infos />
+
+      <Duvidas />
 
       <footer className="h-[200px] bg-purple-600 mt-20">
 
